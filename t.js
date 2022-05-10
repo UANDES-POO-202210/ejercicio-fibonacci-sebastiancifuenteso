@@ -3,7 +3,7 @@ function fibonacci(x){
         return 0;
     }
     if (x===1){
-        return 1
+        return 1;
     }
     if (x>=2){
         var f=[0,1];
@@ -11,12 +11,12 @@ function fibonacci(x){
             var r=f[i-1]+f[i-2];
             f.push(r);
         }
-        return f[x]
+        return f[x];
     }
 
 }
 
 var fs = require('fs');
-let n = fs.readFileSync('number.txt', 'utf-8') 
+let n = fs.readFileSync('number.txt', 'utf-8'); 
 console.log("\nEl numero ingresado es: %d", n);
-console.log(fibonacci(n))
+console.log(fibonacci(n));
